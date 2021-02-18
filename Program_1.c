@@ -20,10 +20,10 @@ int main()
 
    int a[n];
 
-   printf("Enter the limit ");
+   printf("Enter the limit \n");
    scanf("%d", &n);
 
-    printf("Enter the elements ");
+    printf("Enter the elements \n");
 
     for(int i=0; i<n; i++){
     scanf("%d", &a[i]);
