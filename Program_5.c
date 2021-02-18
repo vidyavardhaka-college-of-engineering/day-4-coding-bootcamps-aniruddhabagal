@@ -12,6 +12,8 @@ int main()
 
 
     int arr[5], i = 0;
+
+    printf("Enter the elements \n");
     
 
     for(i = 0; i < n; i++)
