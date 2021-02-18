@@ -15,10 +15,12 @@ int main()
    //Print the elements of matrix a using nested for loop and printf statment as per the above specified format
    int n, m;
 
-   int a[n][m];
+   
 
    printf("Enter the limit of n and m \n");
    scanf("%d%d", &n, &m);
+
+   int a[n][m];
 
     printf("Enter the elements \n");
 
@@ -38,14 +40,10 @@ int main()
       for(int j=0; j<m; j++){
 
       printf(" %d", a[i][j]);
-
-      if(j==2)
-      {
-        printf("\n");
-      }
   
       }
       
+      printf("\n");
     }
 
 
