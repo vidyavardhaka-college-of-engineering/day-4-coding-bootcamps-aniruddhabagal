@@ -13,5 +13,41 @@ int main()
    //Read the Value of row and coloumn of the matrix (i.e size of matrix) using scanf statement
    //Read the elements of matrix a using nested for loop and scanf statment
    //Print the elements of matrix a using nested for loop and printf statment as per the above specified format
+   int n, m;
+
+   int a[n][m];
+
+   printf("Enter the limit of n and m \n");
+   scanf("%d%d", &n, &m);
+
+    printf("Enter the elements \n");
+
+    for(int i=0; i<n; i++){
+      for(int j=0; j<m; j++){
+
+        scanf("%d", &a[i][j]);
+
+      }
+
+    }
+
+     printf("The Array elements are \n");
+
+
+    for(int i=0; i<n; i++){
+      for(int j=0; j<m; j++){
+
+      printf(" %d", a[i][j]);
+
+      if(j==2)
+      {
+        printf("\n");
+      }
+  
+      }
+      
+    }
+
+
   return 0;
 }
