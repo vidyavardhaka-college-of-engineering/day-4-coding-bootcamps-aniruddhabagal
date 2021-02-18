@@ -5,18 +5,34 @@
 
 int main()
 {
-    int arr[10];;
-    scanf("%d", &n);
+     int n;
 
-    for(int i = 0; i < 10; i++)
+  printf("Enter the limit \n");
+   scanf("%d", &n);
+
+
+    int arr[5], i = 0;
+    
+
+    for(i = 0; i < n; i++)
         scanf("%d", &arr[i]);
 
     //Write your code here
-    
+    int lar = 0;
+    int small = arr[i];
 
-    for(int i=0; i<10; i++){
-      
+
+    for(i=0; i<n; i++){
+      if(arr[i] >= lar){
+        lar = arr[i];
+      }
+      if(arr[i] <= small){
+        small = arr[i];
+      }
+
     }
+    printf("Largest no is %d\n", lar);
+    printf("Smallest no is %d\n", small);
   
     return 0;
 }
