@@ -19,5 +19,39 @@ int main()
    //Read the array elements using for loop and scanf statment
    //Copy the elements of array 'a'[first array] to  array 'b'[second array] using for loop
    //Print the both array elements in using printf statement in the above specified format
+
+   int n;
+
+   int a[n], b[n];
+
+    printf("Enter the limit \n");
+   scanf("%d", &n);
+
+    printf("Enter the elements \n");
+
+    for(int i=0; i<n; i++){
+    scanf("%d", &a[i]);
+    }
+
+    printf("The Array elements in 1st array are \n");
+
+    for(int i=0; i<n; i++){
+      printf(" %d", a[i]);
+    }  
+
+    printf("\n");
+
+    // int temp = 0;
+
+    for(int i=0; i<n; i++){
+      b[i] = a[i];
+    }
+
+    printf("The Array elements in 2nd array are \n");
+
+    for(int i=0; i<n; i++){
+      printf(" %d", b[i]);
+    }  
+
    return 0; 
 }
